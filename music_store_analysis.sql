@@ -18,6 +18,7 @@ select sum (total) as invoice_totl , billing_city
 from invoice 
 group by billing_city
 order by invoice_totl desc
+limit 1
 
 
 5.write query for customer who has spent the most money
